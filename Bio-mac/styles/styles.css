@@ -1,0 +1,476 @@
+* {
+  /* box-sizing: border-box; */
+  margin: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  background-image: linear-gradient(
+    45deg,
+    #8607fd 0,
+    #b370f3 71%,
+    #fa75f3 100%
+  );
+  width: 100vw;
+  height: 95vh;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+.MainBodyforCenterElements {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.buttonContainer {
+  /* width: 100%; */
+  /* max-width: 980px; */
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  margin: 0 auto;
+}
+/* ================================================ Navbar Styling ======================================== */
+/* body {
+  background-color: #313131;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+} */
+
+a {
+  text-decoration: none;
+  color: #ccc;
+  margin: 5px;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #353234;
+  height: 60px;
+  align-items: center;
+  font-size: 20pt;
+}
+a:hover{
+  color:#8607fd ;
+}
+.menu {
+  margin-left: 30px;
+}
+
+.logo {
+  font-size: 1.4em;
+  font-weight: 600;
+}
+
+.shop {
+  display: inline-block;
+  position: relative;
+}
+
+.shop>a {
+  display: flex;
+  align-items: center;
+}
+
+.shop>a::after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-top: 2px solid #ccc;
+  border-right: 2px solid #ccc;
+  position: absolute;
+  right: 0px;
+  transform: rotate(135deg);
+  align-self: center;
+}
+
+.drop {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 5px 5px 0px;
+  width: 85px;
+}
+
+.drop a {
+  line-height: 20px;
+  display: block;
+  margin: 3px;
+  color: #313131;
+  padding: 0 5px;
+  position: relative;
+}
+
+.drop a:hover, .dropTwo>a:hover, .more a:hover {
+  color: #000;
+  background-color: rgb(221, 253, 248);
+}
+
+.drop .shirt>a {
+  display: flex;
+  align-items: center;
+}
+
+.drop .shirt>a::after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-top: 2px solid #313131;
+  border-right: 2px solid #313131;
+  position: absolute;
+  right: 5px;
+  transform: rotate(45deg);
+}
+
+.shop:hover .drop {
+  display: block;
+}
+
+/*-----------*/
+
+.shirt {
+  position: relative;
+}
+
+.dropTwo {
+  display: none;
+  background-color: #fff;
+  position: absolute;
+  left: 100%;
+  width: 85px;
+  border-radius: 0px 5px 5px;
+  top: 0;
+}
+
+.shirt:hover .dropTwo {
+  display: block;
+}
+
+/* --------- Extra ------------ */
+
+.extra {
+  margin-right: 30px;
+}
+
+.translate {
+  display: inline-block;
+  position: relative;
+}
+
+.extra>a {
+  border: 2px solid #cbc;
+  border-radius: 20px;
+}
+
+.translate>a {
+  border-left: 1px solid #cbc;
+  line-height: 36px;
+}
+
+.more a {
+  color: #313131;
+}
+
+.more {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 5px 5px;
+  right: 0;
+  width: 80px;
+}
+
+.more a {
+  line-height: 20px;
+  display: block;
+  margin: 3px;
+  color: #313131;
+  padding: 0 5px;
+}
+
+/* --------------------- */
+/* ============================================= Custom Border Style =================================== */
+.borderStyle {
+  /* border: #ffffff;
+  border-width: 2px;
+  border-style: solid; */
+}
+/* ========================================== Button ======================================= */
+.Button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  padding: 12px 24px;
+  font-size: 14px;
+  line-height: 14px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #222222;
+  margin: 20px;
+}
+
+.Button__two {
+  width: 300px;
+  border: 3px solid #ffffff;
+  border-radius: 6px;
+  color: #ffffff;
+  background-color: transparent;
+  transition: all 0.25s ease 0.15s;
+}
+.Button__two:hover {
+  color: #8607fd;
+}
+
+.Button__two::before,
+.Button__two::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: -1;
+}
+.Button__two::before {
+  background-color: #b370f3;
+  right: 0;
+  transform: translateX(-100%);
+  transition: all 0.25s ease;
+}
+.Button__two::after {
+  background-color: #ffffff;
+  left: 0;
+  transform: translateX(100%);
+  transition: all 0.25s ease-out 0.15s;
+}
+.Button__two:hover::after {
+  transform: translateX(0);
+}
+.Button__two:hover::before {
+  transform: translateX(0);
+}
+
+/* =========================== New Patient Styling ========================== */
+.NewPatientMainContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.textAreaContainer {
+  margin-left: 50px;
+}
+.NewPatientForm {
+  padding: 20px;
+  margin: 20px;
+}
+.NewPatientForm .Textinput {
+  height: 44px;
+  width: 282px;
+  font-size: large;
+  border-radius: 5px;
+  border-color: #fa75f3;
+}
+.newPatientRemarkBox {
+  font-size: large;
+  height: 200px;
+  width: 400px;
+}
+
+/* ==================================Existing Patient Styling=================================== */
+.existingpatientmaincontainer: {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.existingPatientMainContainer .Textinput {
+  /* background-color: transparent; */
+  height: 44px;
+  width: 282px;
+  font-size: large;
+  border-radius: 5px;
+  border-color: #fa75f3;
+}
+.newPatienttextareaStyles {
+  width: 500px;
+  height: 200px;
+}
+
+/* ======================================================== Taroutology Styling =========================================== */
+.TaruotologyMainCenterContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.TaruotologyLeftContainer {
+  margin: 20px;
+}
+.TaruotologyMainCenterContainer .Textinput {
+  height: 44px;
+  width: 282px;
+  font-size: large;
+  border-radius: 5px;
+  border-color: #fa75f3;
+}
+.TaruotologyForm {
+  padding: 20px;
+}
+.taroutologyRightContainer {
+  margin: 20px;
+}
+
+/* ======================================================== Neurology Styling =========================================== */
+.NeurologyMainCenterContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.NeurologyLeftContainer {
+  padding: 20px;
+}
+.NeurologyLeftForm {
+  padding: 20px;
+}
+.NeurologyMainCenterContainer .Textinput {
+  /* background-color: transparent; */
+  height: 44px;
+  width: 282px;
+  font-size: large;
+  border-radius: 5px;
+  border-color: #fa75f3;
+}
+.NeurologyRightContainer {
+  display: flex;
+  flex-direction: column;
+}
+/* ============================================= Cardiology Styling ================================== */
+.CardiologyMainCenterContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.CardiologyMainCenterContainer .Textinput {
+  height: 44px;
+  width: 282px;
+  font-size: large;
+  border-radius: 5px;
+  border-color: #fa75f3;
+}
+.CardiologyLeftContainer {
+  padding: 20px;
+}
+.CardiologyLeftForm {
+  padding: 20px;
+}
+.CardiologyRightContainer {
+  padding: 20px
+  margin-top: -100px;
+}
+/* ============================================= Footer Styling ============================================= */
+footer {
+	width: 100%;
+	background-color: #4e545c;
+	padding: 16px;
+	color: #e5e8e8;
+	position: fixed;
+	bottom: 0;
+	text-align: center;
+	font-weight: 400;
+}
+
+
+
+input
+{
+  width: 75%;
+  background-color: #ffffff;
+  color: white;
+  padding: 14px 15px;
+  margin: 4px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #000;
+}
+.Textinput2{
+  width: 200px;
+  background-color: #ffffff;
+  color: white;
+  padding: 14px 15px;
+  margin: 4px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #000;
+}
+.tableCardio{
+  padding-top: 40px;
+}
+h1{
+  margin-top: 10px;
+  text-align: center;
+}
+
+
+.Button2 {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  padding: 12px 12px;
+  font-size: 14px;
+  line-height: 14px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #222222;
+  margin: 0px 0px 0px 5px;
+}
+.Button__th {
+  width: 220px;
+  border: 3px solid #ffffff;
+  border-radius: 6px;
+  color: #ffffff;
+  background-color: transparent;
+  transition: all 0.25s ease 0.15s;
+}
+.Button__th:hover {
+  color: #8607fd;
+}
+
+.Button__th::before,
+.Button__th::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: -1;
+}
+.Button__th::before {
+  background-color: #b370f3;
+  right: 0;
+  transform: translateX(-100%);
+  transition: all 0.25s ease;
+}
+.Button__th::after {
+  background-color: #ffffff;
+  left: 0;
+  transform: translateX(100%);
+  transition: all 0.25s ease-out 0.15s;
+}
+.Button__th:hover::after {
+  transform: translateX(0);
+}
+.Button__th:hover::before {
+  transform: translateX(0);
+}
