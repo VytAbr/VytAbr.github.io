@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Patient</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <nav> 
+        <div class="menu">
+            <a class="logo" href="index.html">Bio-MAC proto GUI</a>
+            <a href="Taruotology.html">Traumatology</a>
+            <a href="Neurology.html">Traumatology</a>
+            <a href="Cardiology.html">Cardiology</a>
+        </div>
+      </nav>
+    <div class="MainBodyforCenterElements">
+        <div class="NewPatientMainContainer">
+            <div class="NewPatientLeftContainer">
+                <table >
+                <form class="NewPatientForm borderStyle">
+                    <div class="borderStyle">
+                        <tr>
+                        <td><label class="textStyle">User ID:</label></td>
+                        <td><input type="text" placeholder="User ID" class="Textinput"/></td>
+                        <td><button class="Button Button__two">Search Subject </button><br></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" placeholder="Screning Date" class="Textinput"/></td>
+                        <td><input type="text" placeholder="Visit No" class="Textinput"/></td>
+                    </tr>
+                    </div>
+    
+                    <div class="borderStyle">
+                        <tr>
+                        <td><label class="textStyle">Birthday:</label></td>
+                       <td> <input type="date" name="" placeholder="Enter your Date of Birth" reguired id="date" class="Textinput"></td>
+                    </tr>
+                    </div>
+                    <tr>
+                        <td colspan="2">
+                    <div class="borderStyle">
+                       
+                            
+                        <fieldset>
+                            <legend>Gender:</legend>
+                            
+                              <input type="radio" id="gender1" name="Gender" value="Male" />
+                              <label for="gender1">Male</label>
+                        
+                              <input type="radio" id="gender2" name="Gender" value="Female" />
+                              <label for="gender2">Female</label>
+                            
+                              
+                            
+                            
+                          </fieldset>
+                        </td>
+                        
+                        
+                    </div>
+                    <tr>
+    
+                    <div class="borderStyle">
+                      <td>  <label class=""> Weight: </label></td>
+                       <td> <input type="number" name="" placeholder="Enter your Weight in Kg" required id="weight" class="Textinput"></td>
+                    </div>
+                </tr>
+                    <tr>
+                    <div class="borderStyle">
+                       <td> <label class=""> Height: </label></td>
+                       <td> <input type="number" name="" placeholder="Enter your Height in Ft" required id="height" class="Textinput"></td>
+                    </div>
+                </tr>
+                    <tr>
+                    <div class="borderStyle">
+                       <td> <label class=""> BMI Value: </label></td>
+                       <td> <input type="number" name="" placeholder="This is your BMI Value" id="bmivalue" class="Textinput"></td>
+                    </div>
+                </tr>
+                    <tr>
+                    <div class="borderStyle">
+                       <td> <label class=""> Blood Pressure: </label></td>
+                        <td><input type="text" name="" placeholder="Enter your heart rate in mmHg" required id="mmHg" class="Textinput"></td>
+                    </div>
+                </tr>
+                    <tr>
+                    <div class="borderStyle">
+                      <td>  <label class=""> Heart Rate: </label></td>
+                     <td>   <input type="number" name="" placeholder="Enter your heart rate in HR" required id="hr" class="Textinput"></td>
+                    </div>
+                </tr>
+                    <tr>
+                    <div class="borderStyle">
+                        <td><button class="Button Button__two">Show BMI</button></td>
+                       <td> <button class="Button Button__two">Save Patient Data</button></td>
+                    </div>
+                </tr>
+    
+                </form>
+                </table>
+            </div>
+    
+            <div class="NewPatientRightContainer">
+                <label class=""> Summary 1 </label><br>
+                <textarea placeholder="Summary" class="newPatientRemarkBox"></textarea><br><br>
+    
+                <label class=""> Summary 2 </label><br>
+                <textarea placeholder="Remarks" class="newPatientRemarkBox"></textarea>
+            </div>
+        </div>
+    </div>
+    <footer>© BIO - MAC Proto GUI</footer>
+    <!-- <div>A healthy BMI ranges between 19 to 25</div> -->
+</body>
+</html>
